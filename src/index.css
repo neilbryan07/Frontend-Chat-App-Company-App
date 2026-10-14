@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-1 rounded;
+}
+
+.markdown-output {
+  @apply border border-gray-300 dark:border-gray-600 p-4 mt-4 rounded bg-white dark:bg-gray-800;
+}
+
+.markdown-output strong {
+  @apply font-bold text-lg text-gray-900 dark:text-gray-100;
+}
